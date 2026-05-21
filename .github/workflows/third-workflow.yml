@@ -1,17 +1,8 @@
-name: third Workflow
-on:
-  workflow_dispatch:
-
+name: Workflow with Events
+on: push
 jobs:
-  job-1:
+  first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: step 1
-        run: |
-          echo "Hello"
-          echo "second line"
-          echo "third line"
-
-      - name: step 2
-        run: |
-          echo "Bye"
+      - name: step one
+        run: echo "step one"
